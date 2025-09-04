@@ -22,6 +22,7 @@ public class PalindromicNoArrays {
       reversed *= 10;
       i /= 10;
     } // while
+    reversed /= 10;
     if (reversed == num) {
       return "This number is a palindrome!";
     } else {
