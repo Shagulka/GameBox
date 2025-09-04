@@ -67,7 +67,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 7 -> {
-                    //Fibonacci.main();
+                    Fibonacci.main();
                     choiceMade = true;
                 }
                 case 8 -> {
