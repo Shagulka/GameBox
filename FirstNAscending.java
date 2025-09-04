@@ -24,6 +24,17 @@ public class FirstNAscending {
         i = j;
         j = curr;
       }
+      int[] first_n = new int[n];
+      if (n < 1) {
+        return "There are no elements in this list";
+      }
+      //while (true) {
+        
+      //}
+      first_n[0] = 0;
+      for (int idx = 1; idx*2 < n; idx++) {
+
+      }
       return "";
     }
 }
