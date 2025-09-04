@@ -63,7 +63,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 6 -> {
-                    //Factorial.main();
+                    Factorial.main();
                     choiceMade = true;
                 }
                 case 7 -> {
