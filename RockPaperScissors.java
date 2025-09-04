@@ -21,36 +21,40 @@ public class RockPaperScissors {
    */
   private static String rockPaperScissors(String choice) {
     Random rand = new Random();
-    String[] choices = {"Rock", "Rock", "Paper", "Scissor"};
+    String[] choices = {"Rock\n", "Rock\n", "Paper\n", "Scissors\n"};
     String computer_choice = choices[(rand.nextInt(5))];
+    StringBuilder sb = new StringBuilder("The computer chose ");
+    sb.append(computer_choice);
     String[] messages = {"Congratulations! You won!!", "You lost :(", "You tied..."};
+    String message;
     if (choice.equals("rock")) {
       if (computer_choice.equals("Rock")) {
-        return messages[2];
+        message = messages[2];
       } else if (computer_choice.equals("Paper")) {
-        return messages[1];
+        message = messages[1];
       } else {
-        return messages[0];
+        message = messages[0];
       } // if-else (rock)
     } else if (choice.equals("paper")) {
       if (computer_choice.equals("Rock")) {
-        return messages[0];
+        message = messages[0];
       } else if (computer_choice.equals("Paper")) {
-        return messages[2];
+        message = messages[2];
       } else {
-        return messages[1];
+        message = messages[1];
       } // if-else (paper)
     } else if (choice.equals("scissors")) {
       if (computer_choice.equals("Rock")) {
-        return messages[1];
+        message = messages[1];
       } else if (computer_choice.equals("Paper")) {
-        return messages[0];
+        message = messages[0];
       } else {
-        return messages[2];
+        message = messages[2];
       } // if-else (scissors)
     } else {
       return "You did not type 'rock' 'paper' or 'scissors', so you automatically lose :(";
     }
+    return sb.append(message).toString();
   }
 
   /**
