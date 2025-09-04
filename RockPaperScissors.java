@@ -19,7 +19,7 @@ public class RockPaperScissors {
    * @param choice "rock" "paper" or "scissors" 
    * @return output message -- "win" or "lose"
    */
-  public static String rockPaperScissors(String choice) {
+  private static String rockPaperScissors(String choice) {
     Random rand = new Random();
     String[] choices = {"Rock", "Rock", "Paper", "Scissor"};
     String computer_choice = choices[(rand.nextInt(5))];
