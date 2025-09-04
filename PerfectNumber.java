@@ -11,10 +11,6 @@ public class PerfectNumber {
     }
 
     private static String perfectnum(int num) {
-      if (num == 1) {
-        return "This is a perfect number!";
-      } // if-else
-
       int curr = 0;
       for (int i = 1; i < num; i++) {
         if (curr == num) {
