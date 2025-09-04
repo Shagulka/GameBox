@@ -87,7 +87,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 12 -> {
-                    //PerfectNumber.main();
+                    PerfectNumber.main();
                     choiceMade = true;
                 }
                 case 13 -> {
