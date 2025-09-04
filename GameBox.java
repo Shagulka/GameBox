@@ -47,7 +47,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 2 -> {
-                    GuessANumber.main();
+                    //GuessANumber.main();
                     choiceMade = true;
                 }
                 case 3 -> {
@@ -71,7 +71,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 8 -> {
-                    //FarenheitToCelsius.main();
+                    FarenheitToCelsius.main();
                     choiceMade = true;
                 }
                 case 9 -> {
