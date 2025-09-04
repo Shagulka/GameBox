@@ -46,6 +46,33 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 5 -> {
+                    FirstN.main();
+                    choiceMade = true;
+                }
+                case 6 -> {
+                    Factorial.main();
+                    choiceMade = true;
+                }
+                case 7 -> {
+                    Fibonacci.main();
+                    choiceMade = true;
+                }
+                case 8 -> {
+                    FarenheitToCelsius.main();
+                    choiceMade = true;
+                }
+                case 9 -> {
+                    AvgSpeed.main();
+                    choiceMade = true;
+                }
+                case 10 -> {
+                    Remainder.main();
+                    choiceMade = true;
+                }
+                case 11 -> {
+                    FirstN.main();
+                }
+                case 15 -> {
                     choiceMade = true;
                     writer.write("TESTING DRIVER MODE LOGS FILE\n");
                     System.out.println("Plaing Rock Paper Scissors");
