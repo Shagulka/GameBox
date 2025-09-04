@@ -10,6 +10,9 @@ public class GameBox {
 
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
+        String workingDir = System.getProperty("user.dir");
+        String logfile = workingDir + "GameBox.logs";
+        BufferedWriter writer = new BufferedWriter(new FileWriter(logfile));
         
         System.out.println("Welcome to Gamebox!");
 
@@ -18,11 +21,21 @@ public class GameBox {
 
         System.out.print("""
                            Game List:
-                           1. ROCK PAPER SCISSORS
-                           2. GUESS A NUMBER
-                           3. PALINDROMIC 1
-                           4. PALINDROMIC 2: RETURN OF THE ARRAY
-                           5. DRIVER MODE
+                           1. Rock Paper Scissors
+                           2. Guess a Number
+                           3. Is it a palindrome?
+                           4. Are you sure it is a palindrome?
+                           5. Sum of first N digits
+                           6. Factorial
+                           7. Fibbonaci
+                           8. Farenheit to Celcius
+                           9. Average Speed
+                           10. Remainder
+                           11. Ascending order, the n first positive numbers that are multiples of i, or j.
+                           12. Perfect number
+                           13. Congruent modulo.
+                           14. Three integers multiplied
+                           15. Driver mode
                            Type your choice (a number):""");
 
         int choice = scan.nextInt();
@@ -42,7 +55,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 4 -> {
-                    PalindromicWithArrays.main();
+                    //PalindromicWithArrays.main();
                     choiceMade = true;
                 }
                 case 5 -> {
@@ -50,45 +63,58 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 6 -> {
-                    Factorial.main();
+                    //Factorial.main();
                     choiceMade = true;
                 }
                 case 7 -> {
-                    Fibonacci.main();
+                    //Fibonacci.main();
                     choiceMade = true;
                 }
                 case 8 -> {
-                    FarenheitToCelsius.main();
+                    //FarenheitToCelsius.main();
                     choiceMade = true;
                 }
                 case 9 -> {
-                    AvgSpeed.main();
+                    //AvgSpeed.main();
                     choiceMade = true;
                 }
                 case 10 -> {
-                    Remainder.main();
+                    //Remainder.main();
                     choiceMade = true;
                 }
                 case 11 -> {
-                    FirstN.main();
+                    //FirstNAscending.main();
+                    choiceMade = true;
+                }
+                case 12 -> {
+                    //PerfectNumber.main();
+                    choiceMade = true;
+                }
+                case 13 -> {
+                    //CongruentModulo.main();
+                    choiceMade = true;
+                }
+                case 14 -> {
+                    //ConsecutiveIntegersMultiplied.main();
+                    choiceMade = true;
                 }
                 case 15 -> {
                     choiceMade = true;
                     writer.write("TESTING DRIVER MODE LOGS FILE\n");
                     System.out.println("Plaing Rock Paper Scissors");
                     writer.write("Plaing Rock Paper Scissors\n");
-                    RockPaperScissors.driver(writer);
+                    //RockPaperScissors.driver(writer);
                     System.out.println("Playing Guess A Number");
                     writer.write("Plaing Guess A Number\n");
-                    GuessANumber.driver(writer);
+                    //GuessANumber.driver(writer);
                     System.out.println("Playing Palindrome (No Arrays)");
                     writer.write("Plaing Palindrome (No Arrays)\n");
-                    PalindromicNoArrays.driver(writer);
+                    //PalindromicNoArrays.driver(writer);
                     System.out.println("Playing Palindrome 2 (Yes Arrays)");
                     writer.write("Plaing Palindrome 2 (Yes Arrays)\n");
-                    PalindromicWithArrays.driver(writer);
+                    //PalindromicWithArrays.driver(writer);
                     writer.close();
-                    System.out.println("log saved to " + log_path);
+                    //System.out.println("log saved to " + logfile);
                 }
                 default -> {
                     System.out.print("Not a valid choice, please type an integer from 1 to 4");
