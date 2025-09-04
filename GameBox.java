@@ -55,7 +55,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 4 -> {
-                    //PalindromicWithArrays.main();
+                    PalindromicWithArrays.main();
                     choiceMade = true;
                 }
                 case 5 -> {
