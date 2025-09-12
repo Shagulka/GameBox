@@ -95,7 +95,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 14 -> {
-                    //ConsecutiveIntegersMultiplied.main();
+                    ConsecutiveIntegersMultiplied.main();
                     choiceMade = true;
                 }
                 case 15 -> {
