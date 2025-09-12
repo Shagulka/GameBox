@@ -83,7 +83,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 11 -> {
-                    //FirstNAscending.main();
+                    FirstNAscending.main();
                     choiceMade = true;
                 }
                 case 12 -> {

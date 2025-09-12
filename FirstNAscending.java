@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class FirstNAscending {
@@ -39,6 +40,6 @@ public class FirstNAscending {
           first_n[idx+2] = i*j*idx;
         }
       }
-      return first_n.toString();
+      return Arrays.toString(first_n) + "\n";
     }
 }
