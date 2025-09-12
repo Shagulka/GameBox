@@ -24,17 +24,21 @@ public class FirstNAscending {
         i = j;
         j = curr;
       }
+
       int[] first_n = new int[n];
       if (n < 1) {
         return "There are no elements in this list";
       }
-      //while (true) {
-        
-      //}
       first_n[0] = 0;
-      for (int idx = 1; idx*2 < n; idx++) {
-
+      for (int idx = 1; 3*idx < n; idx++) {
+        first_n[idx] = i*idx;
+        if (idx + 1 < n) {
+          first_n[idx+1] = j*idx;
+        }
+        if (idx + 2 < n) {
+          first_n[idx+2] = i*j*idx;
+        }
       }
-      return "";
+      return first_n.toString();
     }
 }
