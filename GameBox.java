@@ -11,7 +11,7 @@ public class GameBox {
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
         String workingDir = System.getProperty("user.dir");
-        String logfile = workingDir + "GameBox.logs";
+        String logfile = workingDir + "GameBox_logs.txt";
         BufferedWriter writer = new BufferedWriter(new FileWriter(logfile));
         
         System.out.println("Welcome to Gamebox!");
@@ -90,7 +90,7 @@ public class GameBox {
                     PerfectNumber.main();
                     choiceMade = true;
                 }
-                case 13 -> {
+                case 13 -> {   
                     CongruentModulo.main();
                     choiceMade = true;
                 }
@@ -101,20 +101,17 @@ public class GameBox {
                 case 15 -> {
                     choiceMade = true;
                     writer.write("TESTING DRIVER MODE LOGS FILE\n");
-                    //System.out.println("Plaing Rock Paper Scissors");
-                    //writer.write("Plaing Rock Paper Scissors\n");
-                    //RockPaperScissors.driver(writer);
-                    //System.out.println("Playing Guess A Number");
-                    //writer.write("Plaing Guess A Number\n");
-                    //GuessANumber.driver(writer);
-                    System.out.println("Playing Palindrome (No Arrays)");
-                    writer.write("Plaing Palindrome (No Arrays)\n");
-                    //PalindromicNoArrays.driver(writer);
-                    System.out.println("Playing Palindrome 2 (Yes Arrays)");
-                    writer.write("Plaing Palindrome 2 (Yes Arrays)\n");
-                    //PalindromicWithArrays.driver(writer);
+                    System.out.println("Playing Congruent Modulo");
+                    writer.write("Playing Congruent Modulo\n");
+                    CongruentModulo.driver(writer);
+                    System.out.println("Playing Consecutive Integers Multiplied");
+                    writer.write("Playing Consecutive Integers Multiplied\n");
+                    ConsecutiveIntegersMultiplied.driver(writer);
+                    System.out.println("Playing Remainder");
+                    writer.write("Playing Remainder\n");
+                    Remainder.driver(writer);
                     writer.close();
-                    //System.out.println("log saved to " + logfile);
+                    System.out.println("log saved to " + logfile);
                 }
                 default -> {
                     System.out.print("Not a valid choice, please type an integer from 1 to 4");

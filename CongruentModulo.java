@@ -23,9 +23,9 @@ public class CongruentModulo {
             return "Invalid input: n must be positive.";
         }
         if ((a % n) == (b % n)) {
-            return a + " and " + b + " are congruent modulo " + n + ".";
+            return a + " and " + b + " are congruent modulo of " + n + ".\n";
         } else {
-            return a + " and " + b + " are not congruent modulo " + n + ".";
+            return a + " and " + b + " are not congruent modulo " + n + ".\n";
         }
     }
 
@@ -41,7 +41,7 @@ public class CongruentModulo {
         writer.write(congruent_modulo(100, 250, 50));
         System.out.println("TEST 3");
         writer.write("TEST 3 \n");
-        writer.write("congruent_modulo(38, 20, 6)\n");
-        writer.write(congruent_modulo(38, 20, 6));
+        writer.write("congruent_modulo(37, 20, 6)\n");
+        writer.write(congruent_modulo(37, 20, 6));
     }
 }
