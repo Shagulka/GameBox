@@ -75,7 +75,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 9 -> {
-                    //AvgSpeed.main();
+                    AvgSpeed.main();
                     choiceMade = true;
                 }
                 case 10 -> {
