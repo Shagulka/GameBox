@@ -47,7 +47,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 2 -> {
-                    //GuessANumber.main();
+                    GuessANumber.main();
                     choiceMade = true;
                 }
                 case 3 -> {
