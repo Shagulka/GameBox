@@ -6,8 +6,7 @@ public class CongruentModulo {
     public static void main(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to the CONGRUENT MODULO!!!");
-        System.out.println("Choose the positive integers a, b, and n, your program will print if a and b are congruent
-modulo n.");
+        System.out.println("Choose the positive integers a, b, and n, your program will print if a and b are congruent modulo n.");
         System.out.println("Type a!");
         int a = scan.nextInt();
         System.out.println("Type b!");
