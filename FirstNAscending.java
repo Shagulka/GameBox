@@ -30,10 +30,9 @@ public class FirstNAscending {
       if (n < 1) {
         return "There are no elements in this list";
       }
-      first_n[0] = 0;
       int i_multiplier = 1;
       int j_multiplier = 1;
-      for (int idx = 1; idx < n; idx++) {
+      for (int idx = 0; idx < n; idx++) {
         if (i*i_multiplier < j*j_multiplier) {
           first_n[idx] = i*i_multiplier;
           i_multiplier++;
