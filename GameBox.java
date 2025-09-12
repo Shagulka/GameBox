@@ -91,7 +91,7 @@ public class GameBox {
                     choiceMade = true;
                 }
                 case 13 -> {
-                    //CongruentModulo.main();
+                    CongruentModulo.main();
                     choiceMade = true;
                 }
                 case 14 -> {
@@ -101,11 +101,11 @@ public class GameBox {
                 case 15 -> {
                     choiceMade = true;
                     writer.write("TESTING DRIVER MODE LOGS FILE\n");
-                    System.out.println("Plaing Rock Paper Scissors");
-                    writer.write("Plaing Rock Paper Scissors\n");
+                    //System.out.println("Plaing Rock Paper Scissors");
+                    //writer.write("Plaing Rock Paper Scissors\n");
                     //RockPaperScissors.driver(writer);
-                    System.out.println("Playing Guess A Number");
-                    writer.write("Plaing Guess A Number\n");
+                    //System.out.println("Playing Guess A Number");
+                    //writer.write("Plaing Guess A Number\n");
                     //GuessANumber.driver(writer);
                     System.out.println("Playing Palindrome (No Arrays)");
                     writer.write("Plaing Palindrome (No Arrays)\n");
