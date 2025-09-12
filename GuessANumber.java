@@ -21,7 +21,7 @@ public class GuessANumber {
     int tries = 0;
     while (val != guess) {
       System.out.println("Our guess is " + guess);
-      System.out.println("Is our guess higher, lower, or correct?");
+      System.out.println("Is your number higher, lower, or correct?");
       direction = scan.nextLine();
       if (direction == "higher") {
         lower = guess++;
