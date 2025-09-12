@@ -12,7 +12,7 @@ public class GuessANumber {
   private static void guess(Scanner scan) {
     System.out.println("Welcome to guess a number! Come up with a number between 0 and 100 RIGHT NOW. And don't change it.");
     System.out.println("Okay.... once you have your number, we will start making guesses! Hit enter to continue.");
-    scan.next();
+    scan.nextLine();
     int lower = 0;
     int guess = 50;
     int upper = 100;
