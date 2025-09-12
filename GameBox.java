@@ -11,7 +11,7 @@ public class GameBox {
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
         String workingDir = System.getProperty("user.dir");
-        String logfile = workingDir + "GameBox_logs.txt";
+        String logfile = workingDir + "GameBox.logs";
         BufferedWriter writer = new BufferedWriter(new FileWriter(logfile));
         
         System.out.println("Welcome to Gamebox!");
