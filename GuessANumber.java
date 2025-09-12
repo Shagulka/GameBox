@@ -16,22 +16,21 @@ public class GuessANumber {
     int lower = 0;
     int guess = 50;
     int upper = 100;
-    int val = 0;
     String direction;
     int tries = 0;
-    while (val != guess) {
+    while (true) {
       System.out.println("Our guess is " + guess);
       System.out.println("Is your number higher, lower, or correct?");
-      direction = scan.nextLine();
-      if (direction == "higher") {
-        lower = guess++;
+      direction = scan.next();
+      if (direction.equals("higher")) {
+        lower = guess + 1;
         guess = midpoint(lower, upper);
         tries++;
-      } else if (direction == "lower") {
+      } else if (direction.equals("lower")) {
         upper = guess;
         guess = midpoint(lower, upper);
         tries++;
-      } else if (direction == "correct") {
+      } else if (direction.equals("correct")) {
         System.out.println("YAYYYY! We guessed your number in " + tries + " tries!!!");
         return;
       } else {
@@ -41,6 +40,6 @@ public class GuessANumber {
   }
 
   private static int midpoint(int lower, int upper) {
-    return (int)(lower + upper)/2;
+    return (lower + upper)/2;
   }
 }
