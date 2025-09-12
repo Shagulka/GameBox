@@ -30,13 +30,19 @@ public class FirstNAscending {
         return "There are no elements in this list";
       }
       first_n[0] = 0;
-      for (int idx = 1; 3*idx < n; idx++) {
-        first_n[idx] = i*idx;
-        if (idx + 1 < n) {
-          first_n[idx+1] = j*idx;
-        }
-        if (idx + 2 < n) {
-          first_n[idx+2] = i*j*idx;
+      int i_multiplier = 1;
+      int j_multiplier = 1;
+      for (int idx = 1; idx < n; idx++) {
+        if (i*i_multiplier < j*j_multiplier) {
+          first_n[idx] = i*i_multiplier;
+          i_multiplier++;
+        } else if (i*i_multiplier > j*j_multiplier) {
+          first_n[idx] = j*j_multiplier;
+          j_multiplier++;
+        } else {
+          first_n[idx] = i*i_multiplier;
+          i_multiplier++;
+          j_multiplier++;
         }
       }
       return first_n.toString();
