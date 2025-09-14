@@ -23,14 +23,17 @@ public class ConsecutiveIntegersMultiplied {
     }
 
     public static void driver(BufferedWriter writer) throws IOException {
-        System.out.println("TESTING 5\n");
-        writer.write("TESTING 5 \n");
-        writer.write(first_n(5));
-        System.out.println("TESTING 504\n");
-        writer.write("TESTING 504 \n");
+        System.out.println("TEST 1: 1 * 2 * 3\n");
+        writer.write("TEST 1: 1 * 2 * 3 \n");
+        writer.write(first_n(6));
+        System.out.println("TEST 2: 504\n");
+        writer.write("TEST 2: 504\n");
         writer.write(first_n(504));
-        System.out.println("TESTING 30\n");
-        writer.write("TESTING 30 \n");
+        System.out.println("TEST 3: 30\n");
+        writer.write("TEST 3: 30 \n");
         writer.write(first_n(30));
+        System.out.println("TEST 4: less than 6 (5)\n");
+        writer.write("TEST 4: less than 6 (5)\n");
+        writer.write(first_n(5));
     }
 }

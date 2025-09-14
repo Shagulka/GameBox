@@ -19,14 +19,14 @@ public class Remainder {
     }
 
     public static void driver(BufferedWriter writer) throws IOException {
-        System.out.println("TESTING 123 \n");
-        writer.write("TESTING 123 \n");
-        writer.write(remainder("123"));
-        System.out.println("TESTING 456\n");
-        writer.write("TESTING 456 \n");
+        System.out.println("TEST 1: zeroes at the end \n");
+        writer.write("TEST 1: zeroes at the end \n");
+        writer.write(remainder("100"));
+        System.out.println("TEST 2: 456\n");
+        writer.write("TEST 2: 456 \n");
         writer.write(remainder("456"));
-        System.out.println("TESTING 789\n");
-        writer.write("TESTING 789 \n");
+        System.out.println("TEST 3: 789\n");
+        writer.write("TEST 3: 789 \n");
         writer.write(remainder("789"));
     }
 }

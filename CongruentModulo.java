@@ -31,17 +31,21 @@ public class CongruentModulo {
 
  
     public static void driver(BufferedWriter writer) throws IOException {
-        System.out.println("TEST 1");
-        writer.write("TEST 1 \n");
-        writer.write("congruent_modulo(10, 22, 12)\n");
-        writer.write(congruent_modulo(10, 22, 12));
-        System.out.println("TEST 2");
-        writer.write("TEST 2 \n");
+        System.out.println("TEST 1: same number");
+        writer.write("TEST 1: same number\n");
+        writer.write("congruent_modulo(10, 10, 12)\n");
+        writer.write(congruent_modulo(10, 10, 12));
+        System.out.println("TEST 2: divisible by n");
+        writer.write("TEST 2: divisible by n\n");
         writer.write("congruent_modulo(100, 250, 50)\n");
         writer.write(congruent_modulo(100, 250, 50));
-        System.out.println("TEST 3");
-        writer.write("TEST 3 \n");
+        System.out.println("TEST 3: not congruent");
+        writer.write("TEST 3: not congruent\n");
         writer.write("congruent_modulo(37, 20, 6)\n");
         writer.write(congruent_modulo(37, 20, 6));
+        System.out.println("TEST 4: congruent");
+        writer.write("TEST 4: congruent\n");
+        writer.write("congruent_modulo(38, 20, 6)\n");
+        writer.write(congruent_modulo(38, 20, 6));
     }
 }
