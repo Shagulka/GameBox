@@ -21,11 +21,11 @@ public class RockPaperScissors {
    */
   private static String rockPaperScissors(String choice) {
     Random rand = new Random();
-    String[] choices = {"Rock\n", "Rock\n", "Paper\n", "Scissors\n"};
+    String[] choices = {"Rock", "Rock", "Paper", "Scissors"};
     String computer_choice = choices[(rand.nextInt(5))];
     StringBuilder sb = new StringBuilder("The computer chose ");
     sb.append(computer_choice);
-    String[] messages = {"Congratulations! You won!!", "You lost :(", "You tied..."};
+    String[] messages = {"\nCongratulations! You won!!", "\nYou lost :(", "\nYou tied..."};
     String message;
     if (choice.equals("rock")) {
       if (computer_choice.equals("Rock")) {
